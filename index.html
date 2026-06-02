@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SwipeRoll Privacy Policy</title>
+  <meta name="description" content="Privacy policy for SwipeRoll. Your photo library never leaves your iPhone.">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1d1d1f;
+      --muted: #6e6e73;
+      --accent: #0071e3;
+      --border: #e5e5ea;
+      --card: #f5f5f7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --fg: #f5f5f7;
+        --muted: #98989d;
+        --accent: #2997ff;
+        --border: #2c2c2e;
+        --card: #1c1c1e;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+    header { margin-bottom: 40px; }
+    h1 {
+      font-size: clamp(28px, 6vw, 40px);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin: 0 0 8px;
+    }
+    .updated {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0;
+    }
+    h2 {
+      font-size: 22px;
+      letter-spacing: -0.01em;
+      margin: 48px 0 12px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    p { margin: 0 0 16px; }
+    ul { margin: 0 0 16px; padding-left: 22px; }
+    li { margin: 0 0 8px; }
+    a { color: var(--accent); }
+    code {
+      background: var(--card);
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-size: 0.9em;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    .lede {
+      font-size: 19px;
+      color: var(--fg);
+    }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>SwipeRoll Privacy Policy</h1>
+      <p class="updated">Last updated: 2 June 2026</p>
+    </header>
+
+    <p class="lede">SwipeRoll is designed around a simple principle: your photo library is yours. Nothing in it ever leaves your iPhone because of SwipeRoll. This document explains, in plain language, exactly what the app does and does not do with your data.</p>
+
+    <h2>Who we are</h2>
+    <p>SwipeRoll is developed by Grayson Sutherland. Contact: <a href="mailto:contact@ggs.nz">contact@ggs.nz</a>.</p>
+
+    <h2>What the app accesses</h2>
+    <p>To work, SwipeRoll needs read-and-write access to your iOS Photos library. iOS will ask you for this permission the first time you launch the app, and you can revoke it at any time in <strong>Settings → Privacy &amp; Security → Photos → SwipeRoll</strong>.</p>
+    <p>Specifically, SwipeRoll accesses:</p>
+    <ul>
+      <li><strong>Photos and videos in your Photos library</strong> — fetched on-device through Apple's PhotoKit framework so the app can display them for you to review.</li>
+      <li><strong>The system's deletion flow</strong> — when you confirm a batch deletion, the app asks iOS to delete the selected items. iOS shows you its own confirmation dialog; nothing is deleted unless you tap "Delete" in that dialog.</li>
+    </ul>
+    <p>We do not access your camera, microphone, location, contacts, calendar, health data, or any other category of personal information.</p>
+
+    <h2>What the app stores</h2>
+    <p>SwipeRoll stores a small amount of data <strong>on your device only</strong>, using iOS's standard <code>UserDefaults</code> system:</p>
+    <ul>
+      <li><strong>A list of the local identifiers (per-device IDs) of photos you have marked as "Keep"</strong>, so the same photos aren't shown again in future review sessions. This list is local to your device, never transmitted, and is removed when you uninstall the app.</li>
+    </ul>
+    <p>We do not store copies of your photos or videos. The full-resolution media stays in your iOS Photos library where it always was.</p>
+
+    <h2>What we don't do</h2>
+    <p>SwipeRoll has no servers and no backend. The app contains no networking code that sends any data anywhere. Concretely, SwipeRoll does <strong>not</strong>:</p>
+    <ul>
+      <li>Upload, transmit, or share your photos, videos, or any derived data.</li>
+      <li>Use analytics, telemetry, or crash-reporting services.</li>
+      <li>Use advertising identifiers (IDFA) or any form of tracking.</li>
+      <li>Include third-party SDKs that collect data.</li>
+      <li>Read EXIF or location metadata for any purpose other than displaying the photo's creation date in the card UI.</li>
+      <li>Sell, rent, or share data with anyone, because we have no data to share.</li>
+    </ul>
+    <p>If iOS chooses to download a photo from your own iCloud Photo Library so it can be displayed (because the full image isn't currently on your device), that transfer is between your iPhone and your iCloud account. SwipeRoll has no involvement in or visibility into that transfer.</p>
+
+    <h2>How deletion works</h2>
+    <p>When you swipe left, the photo is added to a <strong>local queue</strong>. It is not deleted at that point. At the end of a session you review the queue and tap "Confirm delete," which asks iOS to delete those items. iOS then shows its standard system confirmation dialog. Deletions go to the Recently Deleted album in Photos, where iOS retains them for 30 days by default — you can restore from there if you change your mind.</p>
+
+    <h2>Children's privacy</h2>
+    <p>SwipeRoll does not knowingly collect personal information from anyone, including children under 13. The app is rated 4+ and contains no advertising, in-app purchases, or links to external services.</p>
+
+    <h2>Security</h2>
+    <p>Because SwipeRoll does not transmit data, the relevant security posture is the security of your device itself. We recommend keeping iOS up to date and using device passcode/Face ID/Touch ID.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we ever change this policy, the "Last updated" date above will change and the new version will be available at the same URL. Material changes will also be noted in the app's release notes on the App Store.</p>
+
+    <h2>Your rights</h2>
+    <p>Because SwipeRoll holds no data about you on any server, there is nothing for us to export, correct, or delete on your behalf. To remove the small on-device data SwipeRoll keeps (the "kept" list described above), delete the app from your iPhone — iOS will remove all of its data.</p>
+    <p>If you have questions about this policy or about SwipeRoll's data handling, write to <a href="mailto:contact@ggs.nz">contact@ggs.nz</a>.</p>
+
+    <footer>
+      <p>© 2026 Grayson Sutherland · SwipeRoll</p>
+    </footer>
+  </div>
+</body>
+</html>
